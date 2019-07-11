@@ -30,12 +30,12 @@ jobs:
             - node_modules
 
       - run:
-          name: jest tests
+          name: eslint tests
           command: |
-            mkdir -p test-results/jest
-            yarn run test
+            mkdir -p test-results/eslint
+            yarn run eslint
           environment:
-            JEST_JUNIT_OUTPUT: test-results/jest/junit.xml
+            ESLINT_JUNIT_OUTPUT: test-results/eslint/junit.xml
 
       - persist_to_workspace:
           root: ~/demo-react-native
