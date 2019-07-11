@@ -38,7 +38,7 @@ jobs:
             ESLINT_JUNIT_OUTPUT: test-results/eslint/junit.xml
 
       - persist_to_workspace:
-          root: ~/test
+          root: ~/test-results
           paths:
             - node_modules
 
