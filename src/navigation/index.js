@@ -1,13 +1,13 @@
 import React from 'react';
 import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import Ionicons from 'react-native-vector-icons/Ionicons'
 
 import HomeScreen from '~/ui/screens/home';
 import ProfileScreen from '~/ui/screens/profile';
 
 const TabNavigator = createBottomTabNavigator(
   {
-    Home: HomeScreen,
+    Home: HomeScreen
     Profile: ProfileScreen,
   },
   {
