@@ -37,10 +37,10 @@ jobs:
           environment:
             ESLINT_JUNIT_OUTPUT: test-results/eslint/junit.xml
 
-      - persist_to_workspace:
-          root: ~/test-results
-          paths:
-            - node_modules
+      # - persist_to_workspace:
+      #     root: ~/test-results
+      #     paths:
+      #       - node_modules
 
       - store_test_results:
           path: test-results
